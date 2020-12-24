@@ -9,7 +9,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        
+
+        <header class="header">
+            <div class="header__container container">
+                <img class="header__icon" src="./img/icon.svg" alt="A cross and a circle">
+                <a class="header__logo logo" href="index.html">
+                    <img class="logo__img" src="./img/logotype.svg" alt="Logo">
+                </a>
+                <img class="header__icon" src="./img/icon.svg" alt="A cross and a circle">
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container container">
+                <p class="main__text">Are you ready to <span class="main__text--blue">play</span>?</p>
+                <div class="main__gameboard gameboard">
+                    <div class="gameboard__cell"><img class="gameboard__figure" src="./img/cross.svg" alt="A cross"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"><img class="gameboard__figure" src="./img/circle.svg" alt="A circle"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"></div>
+                    <div class="gameboard__cell"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <a class="footer__link link" href="https://github.com/yegorkravchenko/tictactoe" target="_blank">
+                    <img class="link__img" src="./img/github.svg" alt="GitHub logo">
+                </a>
+            </div>
+        </footer>
+
         <script src="./app.js"></script>
     </body>
 </html>
