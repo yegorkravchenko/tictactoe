@@ -4,7 +4,7 @@
 }
 
 :root {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 10px;
 }
 
@@ -20,6 +20,77 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1C1C1C;
+  opacity: 0.75;
+}
+
+.modal__block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  padding: 20px;
+  height: 300px;
+  max-width: 750px;
+  width: 80%;
+  min-width: 340px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.modal__title {
+  color: #1C1C1C;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.modal__gamemode-button {
+  background-color: unset;
+  border: 3px solid #1C1C1C;
+  border-radius: 5px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  height: 35px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.modal__gamemode-button--blue {
+  border: 3px solid #177E89;
+  color: #177E89;
+}
+
+.modal__gamemode-button--blue:hover, .modal__gamemode-button--blue-selected {
+  border: 3px solid #177E89;
+  background-color: #177E89;
+  color: #fff;
+}
+
+.modal__gamemode-button--red {
+  border: 3px solid #DB3A34;
+  color: #DB3A34;
+}
+
+.modal__gamemode-button--red:hover, .modal__gamemode-button--red-selected {
+  border: 3px solid #DB3A34;
+  background-color: #DB3A34;
+  color: #fff;
 }
 
 .header {
